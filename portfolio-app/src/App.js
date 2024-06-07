@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
         <header className="App-header">
-            <TitleComponent></TitleComponent>
-            <ButtonComponent/>
+            <div className="w-full justify-center">
+                <TitleComponent></TitleComponent>
+            </div>
+            <ButtonComponent />
         </header>
     </div>
   );

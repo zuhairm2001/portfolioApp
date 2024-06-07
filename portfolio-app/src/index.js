@@ -3,15 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import {initializeApp} from "firebase/app";
+import {getAnalytics} from "firebase/analytics";
+import {DevSupport} from "@react-buddy/ide-toolbox";
+import {ComponentPreviews, useInitial} from "./dev";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <DevSupport ComponentPreviews={ComponentPreviews}
+                    useInitialHook={useInitial}
+        >
+            <App/>
+        </DevSupport>
+    </React.StrictMode>
 );
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -20,13 +26,13 @@ root.render(
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCBP8GJ3Z_E4C-o7USW8cCmlyV1zk_vNjY",
-  authDomain: "portfolioproject-395506.firebaseapp.com",
-  projectId: "portfolioproject-395506",
-  storageBucket: "portfolioproject-395506.appspot.com",
-  messagingSenderId: "1025939481054",
-  appId: "1:1025939481054:web:2ccf0c2bc2345ba77cbd4f",
-  measurementId: "G-4BQSYH84P2"
+    apiKey: "AIzaSyCBP8GJ3Z_E4C-o7USW8cCmlyV1zk_vNjY",
+    authDomain: "portfolioproject-395506.firebaseapp.com",
+    projectId: "portfolioproject-395506",
+    storageBucket: "portfolioproject-395506.appspot.com",
+    messagingSenderId: "1025939481054",
+    appId: "1:1025939481054:web:2ccf0c2bc2345ba77cbd4f",
+    measurementId: "G-4BQSYH84P2"
 };
 
 // Initialize Firebase
