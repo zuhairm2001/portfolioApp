@@ -8,7 +8,9 @@ function AboutMeComponent(props) {
     return<>
 
         <div className="grid grid-cols-2 pt-10 w-fit">
-            <img src="../../public/aboutMe.jpg" alt="aboutMe"/>
+            <div className="flex justify-end pr-10">
+                <img src="https://cdn.myanimelist.net/images/characters/7/83946.jpg" className="justify-start" alt="aboutme"/>
+            </div>
             <div className="w-1/2 ">
                 <p className="text-center text-lg font-normal tracking-tight text-white">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the

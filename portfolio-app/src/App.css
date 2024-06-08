@@ -38,3 +38,18 @@
     transform: rotate(360deg);
   }
 }
+
+.button{
+  transition: transform 0.1s ease-out;
+  background-color: #74777c;
+  box-shadow: 0px 5px 0 #52565C;
+  border: 0;
+  border-radius: 7px;
+  width: 200px;
+  padding: 10px;
+}
+
+.button:active{
+  box-shadow: 0 0 0 #c4c4bc;
+  transform: translateY(6px);
+}
