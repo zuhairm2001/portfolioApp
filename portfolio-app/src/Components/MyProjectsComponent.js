@@ -2,7 +2,7 @@ import React from "react";
 import "animate.css/animate.compat.css"
 import ScrollAnimation from 'react-animate-on-scroll'
 
-function AboutMeComponent(props) {
+function MyProjectsComponent(props) {
 
 
     return<>
@@ -13,13 +13,10 @@ function AboutMeComponent(props) {
             </div>
             <div className="w-1/2 ">
                 <p className="text-center text-lg font-normal tracking-tight text-white">
-                    Welcome to my portfolio! I'm a Computer Science student at the University of Technology Sydney (UTS),
-                    majoring in Artificial Intelligence and am currently completing my honours year. My passion lies in
-                    both general software development and the innovative world of AI. Here, you can explore my projects,
-                    skills, and experiences that showcase my journey and expertise in creating intelligent solutions and
-                    robust software applications. Dive in to see how I merge creativity with technology to solve complex
-                    problems and drive progress in the tech industry.
-
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged.
                 </p>
             </div>
         </div>
@@ -71,4 +68,4 @@ function AboutMeComponent(props) {
         </ScrollAnimation>
     </>;
 }
-export default AboutMeComponent;
+export default MyProjectsComponent;
